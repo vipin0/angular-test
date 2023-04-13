@@ -21,8 +21,8 @@ steps:
 #     ng build --prod
 #   displayName: 'npm install and build'
 - script: |
-    echo pwd
+    echo $(pwd)
     npm ci
-    npm build --prod
+    npm run build
   displayName: "npm install and build"
   workingDirectory: '$(Build.SourcesDirectory)/walk-my-dog'
